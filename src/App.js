@@ -1,21 +1,28 @@
+import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header/Header';
+import Course from './Components/Course/Course';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-    
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit  <code>src/App.js</code> and save to reload.
-        </p>
-     
-        <h1>React</h1>
-       
-      </header>
+    <div>
+     <Header></Header>
+     <div>
+     <Course></Course>
+     </div>
     </div>
+    
   );
 }
+
+
+
+
+
+
+
 
 export default App;
